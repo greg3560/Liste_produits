@@ -1,4 +1,4 @@
-import {createMuiTheme} from '@material-ui/core/styles';
+import { createMuiTheme } from "@material-ui/core/styles";
 
 const theme = createMuiTheme({
     "breakpoints": {
@@ -12,6 +12,12 @@ const theme = createMuiTheme({
                 "minHeight": 48
             },
             "@media (min-width:600px)": { "minHeight": 64 }
+        }
+    },
+    "components": {
+        "spinner": {
+            "left"    : "calc(50% - 20)",
+            "position": "absolute"
         }
     },
     "shadows": [
@@ -142,7 +148,7 @@ const theme = createMuiTheme({
             "fontWeight": 400
         },
         "body1": {
-            "color": "rgba(0, 0, 0, 0.87)",
+            "color": "#757575",
             "fontFamily": "\"Roboto\", \"Helvetica\", \"Arial\", sans-serif",
             "lineHeight": "1.46429em",
             "fontSize": "0.875rem",
@@ -158,8 +164,13 @@ const theme = createMuiTheme({
         "tooltip": 1500
     },
     "shape": { "borderRadius": 4 },
-    "props": {},
-    "spacing": { "unit": 8 },
+    "props": {
+        "MuiButtonBase": {
+            // The default props to change
+            "disableRipple": true // No more ripple, on the whole application 💣!
+        }
+    },
+    "spacing": [0, 2, 2, 6, 8, 10, 12, 14, 16, 18, 20],
     "palette": {
         "tonalOffset": 0.2,
         "background": { "paper": "#fff", "default": "#fafafa" },

@@ -4,15 +4,14 @@ import Grid from "@material-ui/core/Grid";
 import ProductCard from "./ProductCard";
 import { withStyles } from "@material-ui/core";
 
-const styles = {
+const styles = theme => ({
     root   : {
-        marginBottom: "2rem"
     },
     spinner: {
-        left    : "50%",
-        position: "absolute"
+        left    : theme.components.spinner.left,
+        position: theme.components.spinner.position
     }
-};
+});
 
 class ProductList extends React.Component {
 
@@ -24,7 +23,7 @@ class ProductList extends React.Component {
                 direction="row"
                 justify="center"
                 alignItems="flex-start"
-                spacing={5}
+                spacing={10}
                 className={ classes.root }
             >
                 { this.props.products.length > 0 && this.props.products.map((product, index) => {

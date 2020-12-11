@@ -33,8 +33,8 @@ const styles = theme => ({
         overflow: 'initial'
     },
     spinner: {
-        left    : "50%",
-        position: "absolute"
+        left    : theme.components.spinner.left,
+        position: theme.components.spinner.position
     }
 });
 

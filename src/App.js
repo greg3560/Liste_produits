@@ -7,18 +7,17 @@ import Typography from "@material-ui/core/Typography";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import * as ProductsActions from "./actions/RequestAPIAction";
-import CircularProgress from "@material-ui/core/CircularProgress";
 
-const styles = {
+const styles = theme => ({
     root: {
         margin: "0px"
     },
     nav : {
         height         : "100px",
-        backgroundColor: "#1976d2",
+        backgroundColor: theme.palette.primary.main,
         marginBottom   : "2rem"
     }
-};
+});
 
 class App extends Component {
 

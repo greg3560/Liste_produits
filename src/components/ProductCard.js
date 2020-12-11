@@ -17,7 +17,6 @@ import ListItemText from "@material-ui/core/ListItemText/ListItemText";
 
 const useStyles = makeStyles(theme => ({
     root      : {
-        // marginBottom: '2rem'
     },
     card      : {
         maxWidth: 345
@@ -89,7 +88,7 @@ function ProductCard(props) {
                         { product.description }
                     </CardContent>
                     <CardContent>
-                        { product.price + "Euros" }
+                        { product.price + " Euros" }
                     </CardContent>
                 </Collapse>
             </Card>

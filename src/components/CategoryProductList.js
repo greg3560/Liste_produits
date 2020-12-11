@@ -4,15 +4,13 @@ import Grid from "@material-ui/core/Grid";
 import ProductCard from "./ProductCard";
 import { withStyles } from "@material-ui/core";
 
-const styles = {
-    root   : {
-        marginBottom: "2rem"
-    },
+const styles = theme => ({
+    root: {},
     spinner: {
-        left    : "50%",
-        position: "absolute"
+        left: theme.components.spinner.left,
+        position: theme.components.spinner.position
     }
-};
+});
 
 class CategoryProductList extends React.Component {
     constructor(props) {
@@ -29,12 +27,12 @@ class CategoryProductList extends React.Component {
                 direction="row"
                 justify="center"
                 alignItems="flex-start"
-                spacing={ 5 }
+                spacing={ 10 }
                 className={ classes.root }
             >
                 { this.props.data.length > 0 && this.props.data.map((product, index) => {
                     return (
-                        <Grid key={ index } item xs={11} sm={6} md={6} lg={4}>
+                        <Grid key={ index } item xs={ 11 } sm={ 6 } md={ 6 } lg={ 4 }>
                             <ProductCard
                                 product={ product }
                             />
