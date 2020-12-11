@@ -4,7 +4,6 @@ import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
 import {withStyles} from "@material-ui/core";
-import ShowProducts from "../containers/ShowProducts";
 import CircularProgress from "@material-ui/core/CircularProgress/CircularProgress";
 
 

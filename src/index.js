@@ -9,9 +9,6 @@ import {
 } from "redux";
 import thunk from "redux-thunk";
 import { BrowserRouter as Router } from "react-router-dom";
-import CssBaseline from "@material-ui/core/CssBaseline";
-import theme from "../muiTheme";
-import { MuiThemeProvider } from "@material-ui/core/styles";
 
 import rootReducer from "./reducers";
 

@@ -12,10 +12,7 @@ import IconButton from "@material-ui/core/IconButton";
 import { red } from "@material-ui/core/colors";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import { Link } from "react-router-dom";
-import { END_POINT_CATEGORY } from "../constants/APIConfig";
-import AddShoppingCartIcon from "@material-ui/icons/AddShoppingCart";
 import PropTypes from "prop-types";
-import Grid from "@material-ui/core/Grid";
 import ListItemText from "@material-ui/core/ListItemText/ListItemText";
 
 const useStyles = makeStyles(theme => ({
