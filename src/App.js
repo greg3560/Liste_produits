@@ -15,7 +15,7 @@ const styles = {
     },
     nav : {
         height         : "100px",
-        backgroundColor: "red",
+        backgroundColor: "#1976d2",
         marginBottom   : "2rem"
     }
 };
@@ -38,7 +38,6 @@ class App extends Component {
                 <nav className={ classes.nav }>
                     { this.props.products.length > 0 && (
                         <ShowProducts.TemporaryDrawer changeCategory={ this.handleChangeCategory }/>) }
-                    { this.props.products.length === 0 && <CircularProgress color="secondary"/> }
 
                 </nav>
                 <Grid

@@ -37,7 +37,9 @@ const useStyles = makeStyles({
                                      fontFamily: "Roboto, Helvetica, Arial",
                                      fontWeight: 400,
                                      lineHeight: 1.5,
-                                     letterSpacing: '0.00938em'
+                                     letterSpacing: '0.00938em',
+                                     textDecoration: 'unset',
+                                     color: 'grey'
                                  }
                               });
  const TemporaryDrawer = props => {
